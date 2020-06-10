@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Hoa Hồng</title>
+</head>
+<body>
+<script>
+    let kpi = parseInt(prompt("Doanh số bán hàng"));
+    let commisOne = (kpi * 5 / 100);
+    let commisTwo = (kpi * 10 / 100);
+    let commisThree = (kpi * 20 / 100);
+    if (1 <= kpi && kpi < 10) {
+        alert("Hoa Hồng nhận được " + commisOne + " % doanh số bán hàng");
+    } else if  (10 <= kpi && kpi < 15){
+        alert("Hoa Hồng nhận được " + commisTwo + " % doanh số bán hàng");
+    } else if (kpi >= 15) {
+        alert("Hoa Hồng nhận được " + commisThree + " % doanh số bán hàng");
+    }
+</script>
+</body>
+</html>

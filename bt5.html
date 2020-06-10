@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    let TestMarks = parseFloat(prompt("Điểm kiểm tra"));
+    let midTermScore = parseFloat(prompt("Điểm giữa kỳ"));
+    let endOfTerm = parseFloat(prompt("Điểm thi cuối kỳ"));
+    let finalGrade = (TestMarks * 0.1 + midTermScore * 0.3 + endOfTerm * 0.6);
+    if (8 <= finalGrade && finalGrade <= 10) {
+        alert("Học lực hạng A");
+    } else if (6 <= finalGrade && finalGrade < 8) {
+        alert("Học lực hạng B");
+    } else if (4 <= finalGrade && finalGrade  < 6) {
+        alert("Học lực hạng C");
+    } else if (0 <= finalGrade && finalGrade < 4) {
+        alert("Học lực hạng D");
+    }
+</script>
+</body>
+</html>

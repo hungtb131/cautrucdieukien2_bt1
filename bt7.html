@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    let seconds = prompt("Số giây cuộc gọi");
+    let a = 50, b = 40, c = 35;
+    let freightOne = (seconds * a);
+    let freightTwo = (seconds * b);
+    let freightThree = (seconds * a);
+    if (seconds <=30) {
+        alert("Số tiền thanh toán " + freightOne +" Đồng");
+    } else if (30 < seconds && seconds <= 60) {
+        alert("Số tiền thanh toán " + freightTwo +" Đồng");
+    } else if (30 < seconds && seconds <= 60) {
+        alert("Số tiền thanh toán " + freightThree + " Đồng");
+    }
+</script>
+</body>
+</html>
